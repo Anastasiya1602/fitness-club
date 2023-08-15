@@ -984,7 +984,7 @@ h1, h2, h3 {
 
 .footer {
   height: 226px;
-  padding: 46px 256px 23px 260px;
+  padding: 46px 0 23px 0;
 }
 @media screen and (max-width: 992px) {
   .footer {
