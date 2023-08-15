@@ -1004,6 +1004,11 @@ h1, h2, h3 {
   gap: 230px;
   margin-bottom: 44px;
 }
+@media screen and (max-width: 1440px) {
+  .footer-navigation__list {
+    gap: 120px;
+  }
+}
 @media screen and (max-width: 992px) {
   .footer-navigation__list {
     gap: 60px;

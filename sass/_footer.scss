@@ -20,6 +20,10 @@
     gap: 230px;
     margin-bottom: 44px;
 
+    @media screen and (max-width:1440px) {
+      gap: 120px;
+    }
+
     @media screen and (max-width:992px) {
       gap: 60px;
     }
