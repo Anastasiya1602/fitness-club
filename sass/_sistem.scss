@@ -1,0 +1,128 @@
+.sistem {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns:  1fr 1fr 1fr 3fr;
+  margin: 0 auto;
+
+  @media screen and (max-width:992px) {
+    grid-template-rows: 1fr 1fr 0,7fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  &-info {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    padding: 128px 90px 0 260px;
+
+    @media screen and (max-width:992px) {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      padding:38px 32px 0 32px;
+    }
+    
+    &__title {
+      margin-bottom: 34px;
+      color: #292929;
+      font-family: Arial;
+      font-size: 80px;
+      line-height: 160px; 
+      letter-spacing: 4px;
+
+      @media screen and (max-width:992px) {
+        margin-bottom: 38px;
+        text-align: center;
+        font-size: 60px;     
+        line-height: 79px; 
+        letter-spacing: 3px;   
+      }
+    }
+
+    &__description {
+      text-align: left;
+      color: #292929;
+      font-family: 'Roboto',sans-serif;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: 2px;
+    }
+  }
+
+  &-item {
+    padding: 70px 22px 0px 9px;
+    text-align: center;
+
+      @media screen and (max-width:992px) {
+        padding: 42px 34px 58px 40px;
+      }
+
+    &__logo {
+      margin-bottom: 70px;
+    }
+
+    &__title {
+      margin-bottom: 48px;
+      color: #292929;
+      text-align: center;
+      font-family: Arial;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 1px;
+    }
+
+    &__description {
+      color: #000;
+      text-align: center;
+      font-family: 'Roboto',sans-serif;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: 2px;
+    }
+  }
+
+  &-nutrition {
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+    @media screen and (max-width:992px) {
+      grid-row: 2/3;
+      grid-column: 1/2; 
+    }
+  }
+
+  &-mode {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  &-programm {
+    grid-row: 2/3;
+    grid-column: 3/4;
+
+      @media screen and (max-width:992px) {
+      grid-row: 3/4;
+      grid-column: 1/3;
+      padding:0 38px;
+      margin-bottom: 56px;
+    }
+  }
+
+  &-image {
+    grid-row: 1/3;
+    grid-column: 4/5;
+
+      @media screen and (max-width:992px) {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    &__barbell {    
+      @media screen and (max-width:992px) {
+        width: 476px;
+        height: 478px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,111 @@
+.slaider-title {
+  margin-bottom: 120px;
+  padding-top: 127px;
+  padding-left: 260px;
+  color: #292929;
+  font-family: Arial;
+  font-size: 80px;
+  line-height: 90px;
+
+  @media screen and (max-width:1700px) {
+    font-size: 60px;
+  }
+
+  @media screen and (max-width:1200px) {
+    font-size: 50px;
+  }
+
+  @media screen and (max-width:992px) {
+    display: none;
+  }
+}
+
+.swiper-slide{
+  @media screen and (max-width:992px) {
+    filter: grayscale(1);
+  }
+
+    &__preview {
+      width: 100%;
+    }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 82px 21px 49px;
+
+    @media screen and (max-width:992px) {
+      padding: 9px 50px 21px 36px;
+    }
+  }
+
+  &__title{    
+    color: #292929;
+    font-family: Arial;
+    font-size: 45px;
+    line-height: 50px;
+
+    @media screen and (max-width:992px) {
+      font-size: 37px;      
+      line-height: 40px;
+    }
+  }
+
+  &__subtitle {
+    color: #292929;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 2px;
+
+    @media screen and (max-width:992px) {
+      font-size: 16px;      
+    }
+  }
+}
+
+.swiper-slide-next {
+  filter: none;
+}
+
+.swiper-button-prev {
+  width: 220px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #FFF 0%, rgba(41, 41, 41, 0.00) 100%);
+
+  @media screen and (max-width:1200px) {
+    display: none;
+  }
+}
+
+.swiper-button-prev::after, .swiper-rtl .wiper-button-prev::after {
+  width: 100%;
+  text-align: start;
+  padding-left: 34px;
+  color: #FF8340;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+}
+
+.swiper-button-next {
+  width: 220px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(-90deg, #FFF 0%, rgba(41, 41, 41, 0.00) 100%);
+
+  @media screen and (max-width:1200px) {
+    display: none;
+  }
+}
+
+.swiper-button-next::after, .swiper-rtl .wiper-button-prev::after {
+  width: 100%;
+  text-align: end;
+  padding-right: 34px;
+  color: #FF8340;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+}
+
+

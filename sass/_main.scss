@@ -1,0 +1,98 @@
+.main {  
+  background-color: #EDEDEB;
+
+  @media screen and (max-width:992px) {
+    padding: 0 32px;
+  }
+
+  &__wrapper { 
+    position: relative;
+    height: 816px;
+    background-color: #EDEDEB;
+
+    @media screen and (max-width:992px) {
+      height: 523px;}
+    }
+
+  &__fitness-man {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -218px;
+    
+    @media screen and (max-width:992px) {
+      width: 624px;
+      left: -99px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top:116px;
+    left: 220px;
+    font-size: 160px;
+    letter-spacing: 8px;
+    color: #CFCFCD;
+
+    @media screen and (max-width:1420px) {
+      font-size: 140px;
+    }
+
+    @media screen and (max-width:1220px) {
+      font-size: 130px;
+    }
+
+    @media screen  and (max-width:1143px) {
+      font-size: 100px;
+    }
+
+    @media screen and (max-width:992px) {
+      
+      line-height: 100px;
+      letter-spacing: 5px;
+      top:97px;
+      left: 65px;
+    }
+  }
+
+  &__description {
+    position: absolute;
+    right: 27px;
+    bottom: 191px;
+    gap: 17px;
+    display: flex;
+    flex-direction: column;   
+    max-width: 589px;
+    font-size: 20px;
+    line-height: 23px; 
+    letter-spacing: 2px; 
+
+    @media screen and (max-width:1360px) {
+      max-width: 363px;
+      right: 20;
+      bottom: 0;
+      gap: 24px; 
+    }
+
+    @media screen and (max-width:992px) {
+      max-width: 363px;
+      right: 0;
+    }
+  
+    &-link {
+      max-width: 235px;
+      padding: 11px 32px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000;
+
+      &:hover {
+        color: #FF8340;
+      }
+
+      &:active {
+        color: #843500;
+      }
+    }
+  }
+}

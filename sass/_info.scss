@@ -1,0 +1,117 @@
+.info {
+  &__wrapper {
+    position: relative;
+    padding:72px 0 228px 0;
+    height: 973px;
+
+    @media screen and (max-width:992px) {
+      max-height: 809px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+    font-size: 80px;
+    line-height: 90px;
+
+    @media screen and (max-width:1700px) {
+      top: 140px;
+      font-size: 70px;
+      line-height: 80px; 
+    }
+
+    @media screen and (max-width:1420px) {
+      top: 110px;
+    }
+
+    @media screen and (max-width:1157px) {
+      top: 80px;
+    }
+
+    @media screen and (max-width:992px) {
+      font-size: 60px;
+      line-height: 70px; 
+      top: 56px;
+      left: 32px;
+    }
+  }
+  
+  &__card {
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    max-width: 568px;
+    padding: 329px 20px 35px 21px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 23px;
+    border: 6px solid #FF8340;
+
+    @media screen and (max-width:1700px) {
+      left: 100px;
+      padding: 279px 20px 35px 21px;
+    }
+
+    @media screen and (max-width:1157px) {
+      max-width: 481px;
+    }
+
+    @media screen and (max-width:992px) {
+      padding: 274px 29px 0 20px;
+      top: 14px;
+      bottom: 141px;
+      left: 113px;
+      max-width: 511px;
+    }
+
+    &-link {
+      display: block;
+      padding: 23px 39px;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: normal;
+      color: #000;
+
+      &:hover {
+        color: #FF8340;
+      }
+
+      &:active {
+        color: #843500;
+      }
+
+      @media screen and (max-width:992px) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__fitness-girl {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 600px;
+
+    @media screen and (max-width:1700px) {
+      left: 458px;
+    }
+
+    @media screen and (max-width:1420px) {
+      left: 285px;
+      width: 791px; 
+    }
+
+    @media screen and (max-width:1078px) {
+      left: 255px;
+      width: 762px;
+    }
+
+    @media screen and (max-width:992px) {
+      top: 434px;
+      left: 358px;
+      width: 598px;
+    }
+  }
+}

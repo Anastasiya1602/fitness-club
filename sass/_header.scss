@@ -1,0 +1,108 @@
+.header {
+  height: 140px;
+  padding: 30px 260px 10px 260px;
+  background-color: #EDEDEB;
+
+  @media screen and (max-width:1420px) {
+    padding: 10px 32px 0 32px;
+  }
+
+  @media screen and (max-width:992px) {
+    padding: 10px 32px 0 32px;
+    max-height: 80px;
+  }
+
+  &__logo {
+
+    @media screen and (max-width:1420px) {
+      width: 150px;
+      height: 84px;
+    }
+
+    @media screen and (max-width:992px) {
+      width: 117px;
+      height: 64px;
+    }    
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+
+    .burger-menu {
+      display: none;
+      width: 48px;
+      height: 48px;
+      border: 1px solid #292929;
+      border-radius: 4px;
+      background-color: #FFF;
+      
+      &__line {
+        position: relative;
+        width: 22px;
+        height: 3px;
+        background-color: #292929;
+
+        &::before {
+          position: absolute;
+          bottom: 10px;
+          content:'';
+          width: 22px;
+          height: 2px;
+          background-color: #292929;
+        }
+
+        &::after {
+          position:absolute;
+          top: 10px;
+          content:'';
+          width: 22px;
+          height: 2px;
+          background-color: #292929;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .navigation {
+    @media screen  and (max-width:992px) {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+  
+      &-item {
+        padding: 11px 31px; 
+        font-size: 20px;
+        line-height:normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+  
+      &-link {
+        text-decoration: none;
+        color:  #292929;
+      
+        &:hover {
+        color: #FF8340;
+        }
+  
+        &:active {
+        color: #843500;
+        }
+      }
+    } 
+  }
+}    
+  

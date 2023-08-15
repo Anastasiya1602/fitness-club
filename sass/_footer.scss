@@ -1,0 +1,71 @@
+.footer {
+  height: 226px;
+  padding: 46px 256px 23px 260px;
+
+  @media screen and (max-width:992px) {
+    padding: 46px 36px 23px 28px;
+  }
+
+  &__wrapper {
+    text-align: center;
+    font-size: 20px;
+    line-height:normal;
+    letter-spacing: 2px;
+  }
+
+  &-navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 230px;
+    margin-bottom: 44px;
+
+    @media screen and (max-width:992px) {
+      gap: 60px;
+    }
+
+    &-item {
+      padding: 11px 31px; 
+      text-transform: uppercase;
+    }
+
+    &-link {
+      text-decoration: none;
+      color:  #292929;
+    
+      &:hover {
+      color: #FF8340;
+      }
+
+      &:active {
+      color: #843500;
+      }
+    } 
+  }
+
+    &__button {
+      padding: 11px 0px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      border: none;
+      background: transparent;
+
+          &:hover {
+            color: #FF8340;
+          }
+
+          &:active {
+            color: #843500;
+          }
+      }
+
+    &__date {
+      color: #292929;
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 2px;
+    }
+}

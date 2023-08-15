@@ -1,0 +1,132 @@
+.feedback {
+  padding: 51px 0 165px 0;
+  background-color: #FF8340;
+
+  @media screen and (max-width:1460px) {
+    padding: 38px 32px 30px 32px;
+  }
+
+  @media screen and (max-width:992px) {
+    height: 781px;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 2.25px;
+    color: #292929;
+
+    @media screen and (max-width:1460px) {
+      font-size: 38px;
+    }
+
+    @media screen and (max-width:992px) {
+      margin-bottom: 38px;
+      font-size: 32px;
+      letter-spacing: 1.6px;
+    }
+  }
+
+  &__line {
+    margin: 0 auto 50px auto;
+    width: 64px;
+    height: 6px;
+    background-color: #292929;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+    font-size: 20px;  
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #000;
+
+    @media screen and (max-width:992px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 0; 
+
+    @media screen and (max-width:1460px) {
+      gap: 30px 0;
+    }
+    
+    @media screen and (max-width:992px) {
+      gap: 20px 0;
+    }
+    
+    &__input {
+      padding: 18px 0 17px 34px;
+      width: 49%;
+      border: 2px solid #CFCFCD; 
+
+      &::placeholder {
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #B0B0B0;
+      }
+    }
+
+    &__select {
+      padding: 9px 0 14px 29px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #FFF;
+      background-color: #292929;
+      border: 2px solid #292929;
+      appearance: none;
+      background-image: url('../img/arrow.png');
+      background-repeat: no-repeat;
+      background-position: calc(100% - 40px) center;
+      outline: none;
+      cursor: pointer;  
+      
+      @media screen and (max-width:992px) {
+        background-position: calc(100% - 20px) center;
+      }
+    }
+
+    &__massage {
+      width: 1400px;
+      height: 198px;
+      background: #FFF;
+      border: 2px solid #CFCFCD; 
+
+      @media screen and (max-width:992px) {
+        margin-bottom: 9px;
+      }
+
+      &::placeholder {
+        padding: 18px 0 157px 34px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #B0B0B0;
+      }
+    }
+
+    &__submit {
+      margin-left: auto;
+      padding: 11px 0;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: 2px;
+      background: transparent;
+      border: none;
+
+      &:hover {
+        color:#FFF;
+        }
+  
+        &:active {
+        color: #843500;
+        }
+    }
+  }
+}
+
