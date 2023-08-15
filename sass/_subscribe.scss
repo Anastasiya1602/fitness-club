@@ -1,16 +1,31 @@
 .subscribe {
   padding-top: 144px;
 
+  @media screen  and (max-width:992px){
+    padding: 53px 32px 32px 32px;
+  }
+
   &__title {
     margin-bottom: 83px;
     font-family: Arial;
     font-size: 80px;
     line-height: 90px;
+
+    
+    @media screen  and (max-width:992px){
+      font-size: 60px;
+      margin-bottom: 53px;
+    }
   }
 
   &-card {
     display: flex;
-    gap: 40px;    
+    gap: 40px; 
+    
+    @media screen  and (max-width:992px){
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -22,6 +37,16 @@
   height: 624px;
   align-items: center;
   border: 6px solid #292929;
+
+  @media screen  and (max-width:992px){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 890px;
+    height: 248px;
+    padding: 66px 56px 66px 65px;
+    
+  }
 
   &:hover {
     transform: scale(1.1);
@@ -67,6 +92,10 @@
       letter-spacing: 1px;
       font-weight: 900;
       text-transform: uppercase;
+
+      @media screen  and (max-width:992px){
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -79,6 +108,10 @@
     font-size: 20px;
     line-height: normal;
     letter-spacing: 2px;
+
+    @media screen  and (max-width:992px){
+      margin-bottom: 0;
+    }
   }
 
   &__price {
@@ -89,6 +122,10 @@
     font-weight: 900;
     line-height: normal;
     letter-spacing: 2.25px;
+
+    @media screen  and (max-width:992px){
+      margin-bottom: 0;
+    }
   }
 
   &__button {
@@ -100,6 +137,25 @@
     letter-spacing: 2px;
     border: none;
     background-color: white;
+
+    &:hover {
+      color:#FF8340;
+      }
+
+      &:active {
+      color: #843500;
+      }
   }  
+}
+
+.price__box {
+
+  text-align: center;
+
+  @media screen  and (max-width:992px){
+
+    display: flex;
+    flex-direction: column;
+  }
 }
 

@@ -809,15 +809,32 @@ h1, h2, h3 {
 .subscribe {
   padding-top: 144px;
 }
+@media screen and (max-width: 992px) {
+  .subscribe {
+    padding: 53px 32px 32px 32px;
+  }
+}
 .subscribe__title {
   margin-bottom: 83px;
   font-family: Arial;
   font-size: 80px;
   line-height: 90px;
 }
+@media screen and (max-width: 992px) {
+  .subscribe__title {
+    font-size: 60px;
+    margin-bottom: 53px;
+  }
+}
 .subscribe-card {
   display: flex;
   gap: 40px;
+}
+@media screen and (max-width: 992px) {
+  .subscribe-card {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card {
@@ -828,6 +845,16 @@ h1, h2, h3 {
   height: 624px;
   align-items: center;
   border: 6px solid #292929;
+}
+@media screen and (max-width: 992px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 890px;
+    height: 248px;
+    padding: 66px 56px 66px 65px;
+  }
 }
 .card:hover {
   transform: scale(1.1);
@@ -870,6 +897,11 @@ h1, h2, h3 {
   font-weight: 900;
   text-transform: uppercase;
 }
+@media screen and (max-width: 992px) {
+  .card__icon-subtitle {
+    margin-bottom: 0;
+  }
+}
 .card__description {
   margin-bottom: 30px;
   width: 234px;
@@ -880,6 +912,11 @@ h1, h2, h3 {
   line-height: normal;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 992px) {
+  .card__description {
+    margin-bottom: 0;
+  }
+}
 .card__price {
   margin-bottom: 16px;
   color: #292929;
@@ -888,6 +925,11 @@ h1, h2, h3 {
   font-weight: 900;
   line-height: normal;
   letter-spacing: 2.25px;
+}
+@media screen and (max-width: 992px) {
+  .card__price {
+    margin-bottom: 0;
+  }
 }
 .card__button {
   padding: 11px 0px;
@@ -898,6 +940,22 @@ h1, h2, h3 {
   letter-spacing: 2px;
   border: none;
   background-color: white;
+}
+.card__button:hover {
+  color: #FF8340;
+}
+.card__button:active {
+  color: #843500;
+}
+
+.price__box {
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .price__box {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contact {
