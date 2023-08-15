@@ -4,6 +4,12 @@
   grid-template-columns:  1fr 1fr 1fr 3fr;
   margin: 0 auto;
 
+  @media screen and (max-width:1700px) {
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1440px;
+  }
+
   @media screen and (max-width:992px) {
     grid-template-rows: 1fr 1fr 0,7fr;
     grid-template-columns: 1fr 1fr;
@@ -13,6 +19,12 @@
     grid-row: 1/2;
     grid-column: 1/4;
     padding: 128px 90px 0 260px;
+
+    @media screen and (max-width:1700px) {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      padding: 140px 30px 0 30px;
+    }
 
     @media screen and (max-width:992px) {
       grid-row: 1/2;
@@ -27,6 +39,13 @@
       font-size: 80px;
       line-height: 160px; 
       letter-spacing: 4px;
+
+      @media screen and (max-width:1700px) {
+        text-align: left;
+        font-size: 70px;     
+        line-height: normal; 
+        letter-spacing: 2px; 
+      }
 
       @media screen and (max-width:992px) {
         margin-bottom: 38px;
@@ -44,12 +63,19 @@
       font-size: 20px;
       line-height: normal;
       letter-spacing: 2px;
+
+      @media screen and (max-width:1700px) {
+        text-align: left;
+        font-size: 20px;     
+        line-height: normal; 
+        letter-spacing: 2px; 
+      }
     }
   }
 
   &-item {
     padding: 70px 22px 0px 9px;
-    text-align: center;
+    text-align: center;   
 
       @media screen and (max-width:992px) {
         padding: 42px 34px 58px 40px;
@@ -112,12 +138,18 @@
     grid-row: 1/3;
     grid-column: 4/5;
 
+    @media screen and (max-width:1700px) {
+      grid-row: 1/2;
+      grid-column: 2/4;
+    }
+
       @media screen and (max-width:992px) {
       grid-row: 1/2;
       grid-column: 2/3;
     }
 
-    &__barbell {    
+    &__barbell { 
+  
       @media screen and (max-width:992px) {
         width: 476px;
         height: 478px;
